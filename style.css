@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:wght@500&family=Roboto&family=Rubik:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1440px;
+    border: 2px solid black;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-img{
+    width: 1200px;
+    height: 600px;
+    background-color: rgb(232, 132, 132);
+}
+
+.content-container{
+    border: 2px solid black;
+   position: relative;
+   text-align: center;
+  color: black;
+  height: 600px;
+  width: 1204px;
+}
+.left-side{
+   
+    position: absolute;
+    top: -1px;
+    left: -2px;
+
+    width: 600px;
+    height: 600px;
+
+}
+
+.right-side{
+    position: absolute;
+    top: -1px;
+    right: -2px;
+
+    width: 606px;
+    height: 600px;
+}
+
+.primary-heading-left{
+    width: 268px;
+    height: 87px;
+    margin-top: 200px;
+    color: white;
+    font-family: "Fredoka";
+    font-weight: 700;
+    font-size: 23px;
+    text-overflow: clip;
+    margin-left: 165px;
+    margin-bottom: 30px;
+}
+
+.primary-heading-right{
+    width: 456px;
+    height: 50px;
+    margin-top: 90px;
+    margin-left: 110px;
+    padding: 14px;
+    color: white;
+    font-family: "Roboto";
+    font-weight: 500;
+    border-radius: 12px;
+    background-color: hsl(248, 32%, 49%);
+}
+
+.primary-desc{
+    font-size: 14px;
+    color: white;
+    width: 591px;
+    padding-left: 155px;
+    overflow: hidden;
+    font-family: "Montserrat";
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.form-container{
+    width: 456px;
+    height: 410px;
+    border: 2px solid black;
+    border-radius: 21px;
+    margin-top: 20px;
+    margin-left: 110px;
+    background-color: #fff;
+}
+
+input{
+    display: block;
+    padding: 11px;
+    margin-left: 50px;
+    margin-top: 27px;
+    width: 357px;
+    border-radius: 7px;
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+input::placeholder{
+    padding: 20px;
+}
+
+#submitBtn{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+}
+
+#form-terms{
+    font-size: 10px;
+    margin-top: 13px;
+    color: grey;
+    font-family: "Montserrat";
+}
+
+#terms{
+    color: red;
+    font-weight: bold;
+}
+
+#freeTry{
+    color: rgb(218, 215, 215);
+}
