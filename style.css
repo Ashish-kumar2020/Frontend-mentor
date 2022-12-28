@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:wght@500&family=Roboto&family=Rubik:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:wght@500&family=Roboto&family=Rubik:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    /* margin: 25px; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color:  hsl(30, 38%, 92%);
+}
+
+.container{
+    width: 600px;
+    height: 520px;
+    background-color:  hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#product-image{
+    width: 290px;
+    height: 520px;
+}
+
+.content{
+    padding: 25px;
+}
+
+h2{
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+h1{
+    font-family: Fraunces;
+    margin-bottom: 30px;
+}
+
+#description{
+    margin-bottom: 40px;
+}
+
+p{
+    color: hsl(228, 12%, 48%);
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.price-container{
+    margin-bottom: 25px;
+    width: 240px;
+   position: relative;
+}
+
+.price{
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces;
+    font-weight: 600;
+    font-size: 28px;
+    display: inline-block;
+}
+.old-price{
+    margin-left: 25px;
+    font-size: 17px;
+    position: absolute;
+    top: 6px;
+}
+
+.button-container{
+    position: relative;
+}
+
+#cart-icon{
+    position: absolute;
+    left: 36px;
+    top: 14px;
+}
+button{
+    width: 217px;
+    height: 45px;
+    border-radius: 12px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: Fraunces;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+}
+
