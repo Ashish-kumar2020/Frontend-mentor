@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+
+  <div class="container">
+    <div class="content">
+        <img src="images/logo.svg" alt="PING" id="ping-logo">
+        <h2 class="primary-heading"><span id="launch">We are launching</span>  soon!</h2>
+        <p class="subscribe-text">Subscribe and get notified</p>
+        <div class="form-container">
+          <form action="#" onsubmit="return validation()">
+            <!-- <input type="text" placeholder="Your email address..." id="email"> -->
+            <input type="text" name="email" class="form-control" id="email" autocomplete="off" placeholder="Your email address...">
+            <input type="submit" value="Notify me"
+            id="btn">
+          </form>
+          <span id="emailMsg"></span>
+        </div>
+        <img src="images/illustration-dashboard.png" alt="illustration-dashboard" id="demo-img">
+    </div>
+  </div>
+  <!-- We are launching soon!
+
+  Subscribe and get notified
+
+  Notify Me
+
+  &copy; Copyright Ping. All rights reserved. -->
+
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+  <script>
+    let btn = document.getElementById('btn');
+    
+    // if(btn){
+    //   btn.addEventListener('click',()=>{
+    //     formValidation();
+    //   })
+    // }
+    function validation(){
+      let email = document.getElementById('email').value;
+        if(email == ""){
+            document.getElementById('emailMsg').innerHTML = "** Please enter a valid email";
+            return false;
+        }
+        if(email.indexOf('@') <= 0){
+          document.getElementById('emailMsg').innerHTML = "** @ position is not correct";
+          return false;
+        }
+        if((email.charAt(email.length - 4)!= '.') && (email.charAt(email.length - 3)!= '.')){
+          document.getElementById('emailMsg').innerHTML = "** . Invalid Position";
+          return false;
+        }
+    }
+  </script>
+</body>
+</html>

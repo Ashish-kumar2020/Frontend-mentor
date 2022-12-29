@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:wght@500&family=Roboto&family=Rubik:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1460px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    width: 860px;
+    height: 800px;
+    /* border: 2px solid black; */
+}
+
+#ping-logo{
+    display: block;
+    margin: 25px auto 26px;
+    /* width: 50%; */
+}
+
+.primary-heading{
+   text-align: center;
+   font-family: Fredoka;
+   font-weight: 700;
+   font-size: 30px;
+   margin-bottom: 30px;
+}
+
+#launch{
+    color: hsl(0, 0%, 59%);
+}
+
+.subscribe-text{
+    text-align: center;
+    font-family: Fredoka;
+    font-size: 17px;
+}
+
+.form-container{
+    margin-left: 170px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 420px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid rgb(207, 206, 206);
+    padding: 25px;
+    font-size: 18px;
+    font-family: Fredoka;
+    margin-bottom: 7px;
+}
+
+#btn{
+    width: 142px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid rgb(207, 206, 206);
+    padding: 8px;
+    font-size: 18px;
+    font-family: Fredoka;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+#demo-img{
+    width: 860px;
+    height: 500px;
+}
+
+#emailMsg{
+    color: red;
+    font-weight: bold;
+    font-family: Fredoka;
+    padding: 20px;
+}
